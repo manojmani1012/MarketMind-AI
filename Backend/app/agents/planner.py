@@ -1,6 +1,7 @@
 from app.agents.llm import llm
 
 def planner(state):
+    print("Planner Agent Running")
 
     query = state["query"]
 

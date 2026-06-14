@@ -1,7 +1,7 @@
 from app.agents.llm import llm
 
 def reporter(state):
-
+    print("Reporter Agent Running")
     response = llm.invoke(
         f"""
         Generate executive report.
