@@ -1,9 +1,10 @@
 import axios from "axios";
 
-export const runResearch = async (query) => {
+const API_URL = "http://localhost:8001";
 
+export const analyzeMarket = async (query) => {
   const response = await axios.post(
-    "http://localhost:8000/research",
+    `${API_URL}/research`,
     {
       query,
     }
